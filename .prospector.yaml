@@ -7,7 +7,11 @@
 # [2] http://www.pydocstyle.org/en/stable/error_codes.html#default-conventions
 # source: https://github.com/pymanopt/pymanopt/blob/master/.prospector.yaml
 strictness: high
-pydocstyle:
+pycodestyle:
+  options:
+    max-line-length: 79
+
+pydocstyle: #Former pep257
   run: true
   disable:
     - D203
